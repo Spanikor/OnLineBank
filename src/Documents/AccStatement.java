@@ -21,6 +21,11 @@ public class AccStatement {
 
     }
 
+    public String getAccStatement (){
+        String accStatement = new String();
+        return accStatement;
+
+            }
 
 
 }
