@@ -10,15 +10,16 @@ public class Main {
 
         // Создание выписки
 
-        AccStatement accStatement = new AccStatement(001, "15.12.2021", 53721.50, "ВнешТоргБанк");
+        AccStatement accStatement = new AccStatement("Клиентская выписка", 001, "15.12.2021", 53721.50, "ВнешТоргБанк");
 
 
 
-
+            System.out.println(AccStatement.titleOfAccStatement());
             System.out.println(AccStatement.numberOfAccStatement());
             System.out.println(AccStatement.dateOfAccStatement());
             System.out.println(AccStatement.quantityMoney());
             System.out.println(AccStatement.nameOfBankOffice());
+
 
 
 

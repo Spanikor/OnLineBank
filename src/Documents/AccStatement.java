@@ -2,14 +2,15 @@ package Documents;
 
 public class AccStatement {
 
-
+    private static String titleOfAccStatement;
     private static int numberOfAccStatement;
     private static String dateOfAccStatement;
     private static double quantityMoney;
     private static String nameOfBankOffice;
 
 
-    public AccStatement(int numberOfAccStatement, String dateOfAccStatement, double quantityMoney, String nameOfBankOffice) {
+    public AccStatement(String titleOfAccStatement, int numberOfAccStatement, String dateOfAccStatement, double quantityMoney, String nameOfBankOffice) {
+        this.titleOfAccStatement = titleOfAccStatement;
         this.numberOfAccStatement = numberOfAccStatement;
         this.dateOfAccStatement = dateOfAccStatement;
         this.quantityMoney = quantityMoney;
@@ -41,6 +42,10 @@ public class AccStatement {
 
         return nameOfBankOffice;
 
+    }
+
+    public static String titleOfAccStatement() {
+        return titleOfAccStatement;
     }
 
 
