@@ -3,10 +3,10 @@ package Documents;
 public class AccStatement {
 
 
-    private int numberOfAccStatement;
-    private String dateOfAccStatement;
-    private double quantityMoney;
-    private String nameOfBankOffice;
+    private static int numberOfAccStatement;
+    private static String dateOfAccStatement;
+    private static double quantityMoney;
+    private static String nameOfBankOffice;
 
 
     public AccStatement(int numberOfAccStatement, String dateOfAccStatement, double quantityMoney, String nameOfBankOffice) {
@@ -17,9 +17,32 @@ public class AccStatement {
     }
 
 
-    public AccStatement() {
+
+    public static int numberOfAccStatement() {
+        return numberOfAccStatement;
+    }
+
+    public static String dateOfAccStatement() {
+
+
+        return dateOfAccStatement;
 
     }
+
+    public static double quantityMoney() {
+
+
+        return quantityMoney;
+
+    }
+
+    public static String nameOfBankOffice() {
+
+
+        return nameOfBankOffice;
+
+    }
+
 
     public String getAccStatement (){
         String accStatement = new String();
