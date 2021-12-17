@@ -17,29 +17,26 @@ public class AccStatement {
         this.nameOfBankOffice = nameOfBankOffice;
     }
 
+    public AccStatement() {
+
+    }
 
 
     public static int numberOfAccStatement() {
-        return numberOfAccStatement;
+                return numberOfAccStatement;
     }
 
     public static String dateOfAccStatement() {
-
-
         return dateOfAccStatement;
 
     }
 
     public static double quantityMoney() {
-
-
         return quantityMoney;
 
     }
 
     public static String nameOfBankOffice() {
-
-
         return nameOfBankOffice;
 
     }
@@ -49,8 +46,8 @@ public class AccStatement {
     }
 
 
-    public String getAccStatement (){
-        String accStatement = new String();
+    public AccStatement getAccStatement (){
+        AccStatement accStatement = new AccStatement();
         return accStatement;
 
             }
