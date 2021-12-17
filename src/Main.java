@@ -15,7 +15,7 @@ public class Main {
 
 
             System.out.println(AccStatement.titleOfAccStatement());
-            System.out.println(AccStatement.numberOfAccStatement());
+            System.out.println("Номер выписки " + AccStatement.numberOfAccStatement());
             System.out.println(AccStatement.dateOfAccStatement());
             System.out.println(AccStatement.quantityMoney());
             System.out.println(AccStatement.nameOfBankOffice());
