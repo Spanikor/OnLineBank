@@ -1,5 +1,7 @@
 package Human;
 
+
+
 public class Consultant extends Person{
 
 
@@ -13,6 +15,8 @@ public class Consultant extends Person{
     }
 
     public Consultant() {
+
+
 
     }
 }
