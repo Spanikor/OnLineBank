@@ -7,6 +7,7 @@ public class AccStatement {
     private static String dateOfAccStatement;
     private static double quantityMoney;
     private static String nameOfBankOffice;
+
     public AccStatement(String titleOfAccStatement, int numberOfAccStatement, String dateOfAccStatement, double quantityMoney, String nameOfBankOffice) {
         this.titleOfAccStatement = titleOfAccStatement;
         this.numberOfAccStatement = numberOfAccStatement;
@@ -14,27 +15,47 @@ public class AccStatement {
         this.quantityMoney = quantityMoney;
         this.nameOfBankOffice = nameOfBankOffice;
     }
-    public AccStatement() {
-    }
-    public static int numberOfAccStatement() {
-                return numberOfAccStatement;
-    }
-    public static String dateOfAccStatement() {
-        return dateOfAccStatement;
-    }
-    public static double quantityMoney() {
-        return quantityMoney;
-    }
-    public static String nameOfBankOffice() {
-        return nameOfBankOffice;
-    }
-    public static String titleOfAccStatement() {
+
+    public static String getTitleOfAccStatement() {
         return titleOfAccStatement;
     }
-    public AccStatement getAccStatement (){
-        AccStatement accStatement = new AccStatement();
-        return accStatement;
-            }
+
+    public static void setTitleOfAccStatement(String titleOfAccStatement) {
+        AccStatement.titleOfAccStatement = titleOfAccStatement;
+    }
+
+    public static int getNumberOfAccStatement() {
+        return numberOfAccStatement;
+    }
+
+    public static void setNumberOfAccStatement(int numberOfAccStatement) {
+        AccStatement.numberOfAccStatement = numberOfAccStatement;
+    }
+
+    public static String getDateOfAccStatement() {
+        return dateOfAccStatement;
+    }
+
+    public static void setDateOfAccStatement(String dateOfAccStatement) {
+        AccStatement.dateOfAccStatement = dateOfAccStatement;
+    }
+
+    public static double getQuantityMoney() {
+        return quantityMoney;
+    }
+
+    public static void setQuantityMoney(double quantityMoney) {
+        AccStatement.quantityMoney = quantityMoney;
+    }
+
+    public static String getNameOfBankOffice() {
+        return nameOfBankOffice;
+    }
+
+    public static void setNameOfBankOffice(String nameOfBankOffice) {
+        AccStatement.nameOfBankOffice = nameOfBankOffice;
+    }
+
 
 
 }

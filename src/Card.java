@@ -22,7 +22,10 @@ public class Card {
     public static int getPinCode() {
         return pinCode;
     }
+
     //создание карты клиента
-    Card clientCard = new Card("5300 3232 4562 0585", "15.05.2021", 1515);
+
+    Card clientCard1 = new Card("5300 3232 4562 0585", "15.05.2021", 1515);
+
 
 }
