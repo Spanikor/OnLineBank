@@ -13,8 +13,4 @@ public class Consultant extends Person {
 
     }
 
-    public Consultant() {
-
-
-    }
 }
