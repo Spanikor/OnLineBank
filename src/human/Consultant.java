@@ -1,8 +1,7 @@
-package Human;
+package human;
 
 
-
-public class Consultant extends Person{
+public class Consultant extends Person {
 
 
     private String doljnost;
@@ -15,7 +14,6 @@ public class Consultant extends Person{
     }
 
     public Consultant() {
-
 
 
     }
