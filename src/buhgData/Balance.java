@@ -1,11 +1,21 @@
 package buhgData;
 
-public class Balance {
+import documents.AccStatement;
 
-    private static double cardBalance;
+public class Balance extends AccStatement {
 
-    public Balance(double cardBalance) {
+    private double cardBalance;
 
+    public Balance(String titleOfAccStatement, int numberOfAccStatement, String dateOfAccStatement, String nameOfBankOffice, double cardBalance) {
+        super(titleOfAccStatement, numberOfAccStatement, dateOfAccStatement, nameOfBankOffice);
+        this.cardBalance = cardBalance;
+    }
+
+    public double getCardBalance() {
+        return cardBalance;
+    }
+
+    public void setCardBalance(double cardBalance) {
         this.cardBalance = cardBalance;
     }
 }
