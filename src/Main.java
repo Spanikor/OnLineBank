@@ -1,6 +1,7 @@
 import documents.AccStatement;
 import documents.Card;
 import buhgData.Balance;
+
 import java.util.Scanner;
 
 
@@ -24,7 +25,7 @@ public class Main {
         // Сard с заполненными атрибутами. //
 
 
-       // AccStatement clientStatement1 = new AccStatement("Клиентская выписка", 0, "19/12/2021", , bankOffice.getBankName());
+        // AccStatement clientStatement1 = new AccStatement("Клиентская выписка", 0, "19/12/2021", , bankOffice.getBankName());
         //создание экземпляра объекта класса //
         // AccStatement с заполненными атрибутами. Причем, тут атрибут имя банка взято из экземпляра объекта класса Card через геттер //
 
