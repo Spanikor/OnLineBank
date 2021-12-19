@@ -8,7 +8,6 @@ public class AccStatement {
     private double quantityMoney;
     private String nameOfBankOffice;
 
-
     public AccStatement(String titleOfAccStatement, int numberOfAccStatement, String dateOfAccStatement, double quantityMoney, String nameOfBankOffice) {
         this.titleOfAccStatement = titleOfAccStatement;
         this.numberOfAccStatement = numberOfAccStatement;
@@ -20,7 +19,6 @@ public class AccStatement {
     public String getTitleOfAccStatement() {
         return titleOfAccStatement;
     }
-
 
     public int getNumberOfAccStatement() {
         return numberOfAccStatement;

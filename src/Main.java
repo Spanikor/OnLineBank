@@ -1,3 +1,4 @@
+import documents.AccStatement;
 import documents.Card;
 
 import java.util.Scanner;
@@ -9,9 +10,15 @@ public class Main {
     public static void main(String[] args) {
         int a = 1;
 
-        Card clientCard1 = new Card("5300 3232 4562 0585", "15.05.2021", 1515); //создание экземпляра объекта класса Credit
+        BankOffice bankOffice = new BankOffice("ВнешТоргБанк", "г. Москва"); //создание экземпляра объекта класса
+        // BankOffice с заполненными атрибутами. //
 
-        // с заполненными атрибутами. //
+        Card clientCard1 = new Card("1111 1111 1111 1111", "01.01.2020", 1515); //создание экземпляра объекта класса
+        // Сard с заполненными атрибутами. //
+
+        AccStatement clientStatement1 = new AccStatement("Клиентская выписка", 0, "19/12/2021", 75633.15, bankOffice.getBankName());
+        //создание экземпляра объекта класса //
+        // AccStatement с заполненными атрибутами. Причем, тут атрибут имя банка взято из экземпляра объекта класса Card через геттер //
 
         System.out.println("Здравствуйте!");
 
@@ -32,11 +39,12 @@ public class Main {
         // данный набор цифр (пин код) сохраняется в переменную примитивного типа int с названием scanner.
 
         if (pinCode == clientCard1.getPinCode()) {
-            System.out.println("Клиентская выписка");
-            System.out.println("Номер выписки " + 1);
-            System.out.println("15.12.2021");
-            System.out.println(53721.50);
-            System.out.println("ВнешТоргБанк");
+            System.out.println(clientStatement1.getTitleOfAccStatement());
+            System.out.println("номер выписки №" + ' ' + clientStatement1.getNumberOfAccStatement() + 1);
+            System.out.println("дата выписки" + ' ' + clientStatement1.getDateOfAccStatement());
+            System.out.println(clientStatement1.getQuantityMoney());
+            System.out.println(bankOffice.getBankName());
+            System.out.println(bankOffice.getBankAddress());
         } else {
             System.out.println("Пин код неверный.");
         }
